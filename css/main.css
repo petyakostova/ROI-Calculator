@@ -1,0 +1,79 @@
+body {
+    font-family: 'Georgia', 'Calibri';
+    font-size: 20px;
+    color: #000000;
+    background-color: #ffffff;
+}
+
+#roi-calculator {
+    margin-top: 15px;
+    width: 50%;
+}
+
+table td {
+    padding: 8px;
+    text-align: center;
+}
+
+table thead tr th {
+    padding: 12px;
+    font-weight: bold;
+}
+
+.name {
+    font-size: 18px;
+    text-align: right;
+    font-weight: bold;
+}
+
+.unit {
+    font-size: 16px;
+    font-weight: normal;
+    font-style: italic;
+}
+
+input {
+    width: 126px;    
+    border-width: 2px;
+    border-style: inset;
+    border-radius: 5px;
+}
+
+input:focus{
+    background-color: #FBB731;
+    
+}
+
+input, #us-odds {
+    font-size: 14px;
+    font-weight: bold;    
+}
+
+.info {
+    font-size: 14px;
+    font-style: italic;
+}
+
+button {
+    width: 130px;
+    height: 24px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    border-radius: 5px;
+}
+
+.btn-calculate {
+    background-color: #CF2127;
+    border-color: #CF2127;
+}
+
+.btn-reset {
+    background-color: #FBB731;
+    border-color: #FBB731;
+}
+
+#roi {
+    font-weight: bold;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>ROI Calculator</title>
+
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+</head>
+
+<body>
+    <section id="roi-calculator">
+        <form onsubmit="return false">
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="3">ROI Calculator</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td class="name">Odds:
+                            <span class="unit">Decimal</span>
+                        </td>
+                        <td><input name="euro-odds" id="euro-odds" onchange="conversion()"></td>
+                        <td id="us-odds">
+                            <span class="unit">US</span>
+                        </td>                        
+                    </tr>
+                    <tr>
+                        <td class="name">Win:
+                            <span class="unit">% </span>
+                        </td>
+                        <td><input id="winning-probability"></td>
+                        <td class="info">Probability of winning</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <button class="btn-calculate" onclick="calculate();">Calculate</button>
+                        </td>
+                        <td>
+                            <button class="btn-reset" onclick="refresh();">Reset</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="name">ROI:
+                            <span class="unit">% </span>
+                        </td>
+                        <td id="roi">
+                            <span></span> 
+                        </td>
+                        <td class="info">Return of investment</td>
+                    </tr>
+                </tbody>
+
+            </table>
+        </form>
+    </section>
+
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>
