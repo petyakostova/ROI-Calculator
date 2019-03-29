@@ -1,5 +1,5 @@
 function conversion() {
-    var formulaUSOdds,
+    let formulaUSOdds,
         euro_odds = document.getElementById('euro-odds').value;
 
     if (euro_odds < 2) {
@@ -12,10 +12,10 @@ function conversion() {
 }
 
 function calculate() {
-    var euro_odds = document.getElementById('euro-odds').value;
-    var winning_probability = document.getElementById('winning-probability').value;
+    let euro_odds = document.getElementById('euro-odds').value;
+    let winning_probability = document.getElementById('winning-probability').value;
 
-    var formulaROI = '(euro_odds * winning_probability / 100 - 1) * 100';
+    let formulaROI = '(euro_odds * winning_probability / 100 - 1) * 100';
 
     if (euro_odds !== '' && winning_probability !== '') {
         document.getElementById('roi').innerHTML = eval(formulaROI).toFixed(2);
@@ -25,6 +25,7 @@ function calculate() {
 function refresh() {
     location.reload();
 
+    // for https://petyakostova.github.io/ROI-Calculator/
     document.getElementById('euro-odds').value = '';
     document.getElementById('winning-probability').value = '';
 }
