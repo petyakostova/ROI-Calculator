@@ -24,4 +24,7 @@ function calculate() {
 
 function refresh() {
     location.reload();
+
+    document.getElementById('euro-odds').value = '';
+    document.getElementById('winning-probability').value = '';
 }
